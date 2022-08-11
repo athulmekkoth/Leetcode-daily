@@ -1,0 +1,17 @@
+class Solution {
+public:
+    vector<int> decode(vector<int>& encoded, int first) {
+        vector<int>cod;
+        int x;
+        cod.push_back(first);
+        for(int i=0;i<encoded.size();i++)
+        {
+            x=encoded[i]^cod[i];
+            cod.push_back(x);
+            }
+        return cod;
+        
+    }
+};
+
+https://leetcode.com/problems/decode-xored-array/submissions/
