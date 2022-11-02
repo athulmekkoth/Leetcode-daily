@@ -14,8 +14,11 @@ public:
         ListNode *ptr1=head;
           ListNode *ptr2=head;
      ListNode *kth=NULL;
-          while (--k)
+        int i=1;
+          while (i!=k){
             ptr1 = ptr1->next;
+              i++;
+          }
         
       
         
